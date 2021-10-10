@@ -45,46 +45,7 @@ void sub_value(struct amount* base,struct amount* sub){
 	base->amount1-=sub->amount1;
 }
 //Draw digit 
-uint16_t draw_digit(uint8_t position, uint8_t digit_value){
-		switch (digit_value)
-		{
-		case SEVEN_SEG_0:
-			printf("0 ");
-			break;
-		case SEVEN_SEG_1:
-			printf("1 ");
-			break;
-		case SEVEN_SEG_2:
-			printf("2 ");
-			break;
-		case SEVEN_SEG_3:
-			printf("3 ");
-			break;
-		case SEVEN_SEG_4:
-			printf("4 ");
-			break;
-		case SEVEN_SEG_5:
-			printf("5 ");
-			break;
-		case SEVEN_SEG_6:
-			printf("6 ");
-			break;
-		case SEVEN_SEG_7:
-			printf("7 ");
-			break;
-		case SEVEN_SEG_8:
-			printf("8 ");
-			break;
-		case SEVEN_SEG_9:
-			printf("9 ");
-			break;
-		case SEVEN_SEG_DOT:
-			printf(". ");
-			break;
-		}
-	
-	return 0;
-}
+uint16_t draw_digit(uint8_t position, uint8_t digit_value);
 
 //Error checking; transform intregers to custom struct
 struct amount* value_to_custom(uint16_t amount2,uint16_t amount1){
